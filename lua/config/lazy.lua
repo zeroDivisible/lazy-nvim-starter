@@ -22,7 +22,7 @@ require("lazy").setup({
       import = "lazyvim.plugins",
 
       opts = {
-        colorscheme = "gotham256",
+        colorscheme = "oxocarbon",
       },
     },
 

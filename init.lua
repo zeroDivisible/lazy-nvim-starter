@@ -2,5 +2,5 @@
 require("config.lazy")
 
 if vim.g.neovide then
-  vim.opt.guifont = { "Berkeley Mono", ":h20" }
+  vim.opt.guifont = { "Berkeley Mono", ":h18" }
 end
