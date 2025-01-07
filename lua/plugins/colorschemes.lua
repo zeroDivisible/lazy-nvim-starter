@@ -31,6 +31,14 @@ return {
     "rafi/awesome-vim-colorschemes",
   },
   {
+    "sainnhe/everforest",
+    lazy = false,
+    priority = 1000,
+    config = function()
+      vim.g.everforest_enable_italic = false
+    end,
+  },
+  {
     "scottmckendry/cyberdream.nvim",
   },
   {
