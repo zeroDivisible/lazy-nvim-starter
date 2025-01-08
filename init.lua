@@ -4,3 +4,8 @@ require("config.lazy")
 if vim.g.neovide then
   vim.opt.guifont = { "Berkeley Mono", ":h20" }
 end
+
+local pipepath = vim.fn.stdpath("cache") .. "/server.pipe"
+if not vim.loop.fs_stat(pipepath) then
+  vim.fn.serverstart(pipepath)
+end
