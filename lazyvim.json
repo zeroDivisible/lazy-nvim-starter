@@ -1,6 +1,19 @@
 {
   "extras": [
-    "lazyvim.plugins.extras.lang.toml"
+    "lazyvim.plugins.extras.ai.copilot",
+    "lazyvim.plugins.extras.coding.mini-surround",
+    "lazyvim.plugins.extras.coding.nvim-cmp",
+    "lazyvim.plugins.extras.coding.yanky",
+    "lazyvim.plugins.extras.editor.inc-rename",
+    "lazyvim.plugins.extras.editor.telescope",
+    "lazyvim.plugins.extras.lang.git",
+    "lazyvim.plugins.extras.lang.rego",
+    "lazyvim.plugins.extras.lang.toml",
+    "lazyvim.plugins.extras.lsp.neoconf",
+    "lazyvim.plugins.extras.lsp.none-ls",
+    "lazyvim.plugins.extras.util.dot",
+    "lazyvim.plugins.extras.util.mini-hipatterns",
+    "lazyvim.plugins.extras.util.startuptime"
   ],
   "news": {
     "NEWS.md": "10960"
