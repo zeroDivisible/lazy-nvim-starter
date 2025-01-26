@@ -1,0 +1,31 @@
+{
+  "frankroeder/parrot.nvim",
+  dependencies = { 'ibhagwan/fzf-lua', 'nvim-lua/plenary.nvim' },
+  -- optionally include "rcarriga/nvim-notify" for beautiful notifications
+  config = function()
+    require("parrot").setup {
+      -- Providers must be explicitly added to make them available.
+      providers = {
+        anthropic = {
+          api_key = os.getenv "ANTHROPIC_API_KEY",
+        },
+        -- provide an empty list to make provider available (no API key required)
+        ollama = {},
+        openai = {
+          api_key = os.getenv("OPENAI_API_KEY"),
+        },
+        github = {
+          api_key = os.getenv "GITHUB_TOKEN",
+        },
+      },
+      -- fzf_lua options for PrtModel and PrtChatFinder when plugin is installed
+      fzf_lua_opts = {
+        ["--ansi"] = true,
+        ["--sort"] = "",
+        ["--info"] = "inline",
+        ["--layout"] = "reverse",
+        ["--preview-window"] = "nohidden:right:75%",
+      },
+    }
+  end,
+}
