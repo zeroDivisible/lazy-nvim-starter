@@ -3,3 +3,6 @@
 -- Add any additional keymaps here
 
 vim.keymap.set("i", "<C-G>", "<ESC>", { silent = true })
+
+-- disable ext mode
+vim.keymap.set("n", "Q", "<Nop>", { silent = true })

@@ -51,6 +51,9 @@ return {
     "nyoom-engineering/oxocarbon.nvim",
   },
   {
+    "miikanissi/modus-themes.nvim",
+  },
+  {
     "killitar/obscure.nvim",
   },
   {
@@ -79,9 +82,6 @@ return {
   },
   {
     "craftzdog/solarized-osaka.nvim",
-  },
-  {
-    "nyoom-engineering/oxocarbon.nvim",
   },
   {
     "catppuccin/nvim",

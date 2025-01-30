@@ -12,7 +12,9 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
     os.exit(1)
   end
 end
+
 vim.opt.rtp:prepend(lazypath)
+vim.opt.background = "light"
 
 require("lazy").setup({
   spec = {
@@ -22,7 +24,7 @@ require("lazy").setup({
       import = "lazyvim.plugins",
 
       opts = {
-        colorscheme = "everforest",
+        colorscheme = "two-firewatch",
       },
     },
 
@@ -45,13 +47,12 @@ require("lazy").setup({
   },
   defaults = {
     lazy = false,
-    version = false, -- always use the latest git commit
+    version = false,
   },
-  install = { colorscheme = { "seoul256-light", "habamax" } },
   checker = {
-    enabled = true, -- check for plugin updates periodically
-    notify = false, -- notify on update
-  }, -- automatically check for plugin updates
+    enabled = true,
+    notify = false,
+  },
   performance = {
     rtp = {
       -- disable some rtp plugins
