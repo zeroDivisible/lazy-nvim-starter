@@ -78,3 +78,4 @@ vim.opt.whichwrap:append("<,>,[,],h,l")
 
 vim.opt.more = false -- don't pause listing when screen is filled
 vim.opt.swapfile = false -- don't use a swap file
+vim.opt.list = false
