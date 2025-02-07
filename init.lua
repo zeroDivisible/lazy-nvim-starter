@@ -2,7 +2,7 @@
 require("config.lazy")
 
 if vim.g.neovide then
-  vim.opt.guifont = { "Berkeley Mono", ":h22" }
+  vim.opt.guifont = { "Berkeley Mono", ":h20" }
 end
 
 -- pipe mostly used for external integrations with the editor (from within Godot, etc)
