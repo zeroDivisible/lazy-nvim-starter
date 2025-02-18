@@ -52,6 +52,7 @@ require("lazy").setup({
   checker = {
     enabled = true,
     notify = false,
+    concurrency = 10,
   },
   performance = {
     rtp = {
