@@ -24,7 +24,7 @@ require("lazy").setup({
       import = "lazyvim.plugins",
 
       opts = {
-        colorscheme = "two-firewatch",
+        colorscheme = "PaperColor",
       },
     },
 
